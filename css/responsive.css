@@ -127,7 +127,11 @@ to{opacity:1;transform:none;}
 .dropdown-item.active,.dropdown-item:active{background:none !important;}
 .nav-item span.pro_icon{position:absolute;top:0.5rem;right:1rem;color:#333;padding:2px 8px;font-size:2rem;width:32px;height:28px;line-height:24px;display:none;text-align:center;}
 .top-nav ul>li>ul.dropdown-menu>li{position:relative}
-.navbar-nav .dropdown-menu1{min-width:72rem;left:-17.5rem;padding:2rem 2rem 1rem;}
+.navbar-nav .dropdown-menu1{
+min-width:66rem;
+left:-11rem;
+padding:1.6rem 1.2rem 1rem;
+}
 .navbar-nav .dropdown-menu2{left:-27.5rem !important;}
 .navbar-light .navbar-nav .dropdown-menu1 li{width:100%;position:relative;}
 .navbar-light .navbar-nav .dropdown-menu1 .dropdown-item{background:0;position:relative;padding:0.4rem 0 0.4rem 0.3rem;font-size:1.1rem;color:#333;white-space:normal;line-height:1.3rem;text-align:left;border-bottom:1px solid #ddd;margin:0 0 0.2rem;font-weight:600;}
@@ -938,4 +942,31 @@ h2,.etw_hometitle{font-size:2rem;}
 @media (max-width:480.98px){
  .exhibitions_item>ul>li .pro_img{width:100%;}
  .exhibitions_item>ul>li .pro_des{width:100%;padding:1.5rem;}
+}
+/* Machinery mega menu layout refinement */
+.dropdown-menu1 .row{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.dropdown-menu1 .col-lg-4{
+    flex:1 1 33.333%;
+    max-width:33.333%;
+    padding-left:12px;
+    padding-right:12px;
+}
+.navbar-light .navbar-nav .dropdown-menu1 .dropdown-item{
+    font-size:0.9rem !important;
+    line-height:1.2rem !important;
+    padding:0.3rem 0 0.35rem 0.15rem !important;
+    margin-bottom:0.15rem !important;
+}
+.navbar-light .navbar-nav .dropdown-menu1 li ol{
+    padding-top:0.15rem !important;
+    padding-bottom:0.35rem !important;
+}
+.navbar-light .navbar-nav .dropdown-menu1 li ol li a{
+    font-size:0.78rem !important;
+    line-height:1.15rem !important;
+    padding-top:0.12rem !important;
+    padding-bottom:0.12rem !important;
 }
